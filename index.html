@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Loja | Tommy Hilfiger</title>
+</head>
+<body>
+    <section>
+        <div class="caixa">
+            <div class="caixa-img">
+                <img id="icone" src="img/tenis-azul.png" alt="tenis tommy hilfiger azul">
+            </div>
+            <div class="caixa-valores">
+                <h1>TÊNIS ESPORTIVO CLÁSSICO TEVO 12D</h1>
+                <p class="texto">Misture casualidade com sofisticação em seus looks com esse tênis clássico que apresenta a bandeira e o logo Hilfiger na lateral.</p>
+                <div class="caixa-botao">
+                    <button onclick="mudaFoto('img/tenis-azul.png')" class="botao-cor n1"></button>
+                    <button onclick="mudaFoto('img/tenis-branco.png')" class="botao-cor n2"></button>
+                    <button onclick="mudaFoto('img/tenis-preto.png')" class="botao-cor n3"></button>
+                </div>
+                <div class="caixa-tamanho">
+                    <p>Tamanho</p>
+                    <button>38</button>
+                    <button>39</button>
+                    <button>40</button>
+                    <button>41</button>
+                    <button>42</button>
+                </div>
+                <div class="caixa-comprar">
+                    <p><strong class="valor">R$ 399,99</strong> <br> ou 3x de R$ 133.33</p>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function mudaFoto (foto) {
+            document.getElementById("icone").src = foto;
+        }
+    </script>
+</body>
+</html>
